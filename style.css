@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --first: #1D1730;
+    --second: #2B2344;
+}
+
+.size80 {
+    font-size: 5vw;
+    padding: 0.3vw 0;
+}
+
+
+.size30 {
+    font-size: 2.5vw;
+}
+
+body {
+    background: #2B2344;
+    color: #858792;
+}
+
+/* //////////////navbar///////////// */
+.navbar {
+    /* position: absolute; */
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+    background-color: #252734;
+    padding: 0.4vh 0;
+}
+
+.logo {
+    position: absolute;
+    left: 10vw;
+    top: 0px;
+    padding: 1.8vh 0;
+    font-size: 5vh;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    /* height: 60px; */
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: 45vw;
+    font-size: 2.8vh;
+    position: relative;
+    top: 2vh;
+
+}
+
+.nav_cont {
+    height: 9vh;
+}
+
+.content a {
+    margin-left: 3vw;
+    padding: 0.4vw;
+    color: #858792;
+    text-decoration: none;
+    /* opacity: ; */
+}
+
+.content a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(127, 199, 237);
+    ;
+    color: rgb(127, 199, 237);
+}
+
+.content a.acttive {
+    border-bottom: 2px solid rgb(127, 199, 237);
+    ;
+    color: rgb(127, 199, 237);
+}
+
+.container {
+    min-width: 100%;
+    min-height: calc(100vh - 9.4vh);
+}
+@media screen {
+    
+}
+
+/* ********************************************************************************************************************* 
+                                        START OF PAGE 1
+                                        FIRST CONTAINER(HOME) ********************************************************************************************************************* */
+
+.first {
+    background-color: var(--first);
+    color: white;
+    /* height: 100%; */
+}
+
+.write {
+    width: 620px;
+    max-width: 50%;
+    padding: 100px;
+    text-align: left;
+}
+
+/* ///////////////// Typing ///////////////////////// */
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+.type {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shantell Sans', cursive;
+    background: var(--first);
+
+}
+
+.content_typ {
+    display: flex;
+}
+
+.content_typ .stat {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.content_typ .dyna {
+    margin-left: 15px;
+    line-height: 70px;
+    height: 70px;
+    overflow: hidden;
+
+}
+
+.dyna li {
+    list-style: none;
+    color: #ff4c29;
+    font-size: 40px;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -280px;
+    }
+}
+
+.dyna li {
+    position: relative;
+}
+
+.dyna li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--first);
+    border-left: 2px solid #ff4c29;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 0.1vw);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+/* side wala image ka css */
+.shape-top {
+    position: absolute;
+    top: -97px;
+}
+
+/* .shape-left{
+    position: absolute;
+    right: 350px;
+    top: 300px;
+} */
+.shape {
+    z-index: 999;
+}
+
+.shape span {
+    position: absolute;
+    top: -100px;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.shape span:nth-child(1) {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+}
+
+.shape span:nth-child(2) {
+    width:65vh;
+    height: 65vh;
+    border-radius: 50%;
+}
+
+.shape span:nth-child(3) {
+    width: 80vh;
+    height: 80vh;
+    border-radius: 50%;
+}
+
+/* social media icon */
+.media {
+    /* padding: 40px 0; */
+    position: absolute;
+    z-index: 9;
+}
+
+.fa {
+    padding: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa::before {
+    font-size: 52px;
+}
+
+.fa-github {
+    /* background: white; */
+    color: white;
+    size: 22px;
+}
+
+.fa-twitter {
+    color: white;
+
+}
+
+.fa-instagram {
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+    color: white;
+}
+
+.fa-linkedin {
+    /* background: #3B5998; */
+    color: white;
+}
+
+.fa-github:hover {
+    transform: scale (1.5);
+    color: rgb(1, 239, 128);
+
+}
+
+.fa-instagram:hover {
+    transform: scale (1.5);
+    color: #c32aa3;
+}
+
+.fa-twitter:hover {
+    transform: scale (1.5);
+    color: #46c1f6;
+}
+
+.fa-linkedin:hover {
+    transform: scale (1.5);
+    color: #4264ad;
+}
+
+/* ////////////////////// Shape2 /////////// */
+.shape2 {
+    position: absolute;
+    bottom: 3vh;
+    left: 1vw;
+    z-index: 0;
+    width: 46vw;
+}
+
+/* /////////////////////// Shape3 /////////////////// */
+.shape3 {
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.ellipse1 {
+    transform: translateX(50%);
+    position: absolute;
+    right: 26vw;
+    bottom: -27vh;
+    opacity: 0.7;
+    /* top: -400px; */
+    width: 31vw;
+}
+
+.ellipse2 {
+    transform: translateX(50%);
+    position: absolute;
+    right: 18vw;
+    bottom: -21vh;
+    width: 31vw;
+}
+
+.ellipse3 {
+    transform: translateX(50%);
+    position: absolute;
+    right: 27vw;
+    bottom: -14vh;
+    /* top: -400px; */
+    width: 31vw;
+}
+
+.right {
+    position: relative;
+    right: 3vw;
+}
+
+/* img my photo  */
+.img img {
+    position: absolute;
+    right: 15vw;
+    bottom: -26vh;
+    height: 32vw;
+    z-index: 9;
+    /* border: 10px solid rgb(36, 144, 238); */
+    /* border-radius: 50%; */
+}
+
+.dot-shape {
+    position: absolute;
+    right: 8px;
+    bottom: 152px;
+    overflow: hidden;
+    animation: dot1 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes dot1 {
+    0% {
+        translate: 8px;
+    }
+
+    100% {
+        translate: -60px;
+    }
+}
+
+/* waves */
+
+.waves {
+    position: absolute;
+    top: 90vh;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: var(--first)url(/img/image.png);
+    background-size: 2000px 100px;
+    animation: wave 5s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 2000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+
+}
+
+.waves .shape-fill {
+    fill: #252734;
+}
+
+/* ********************************************************************************************************************* 
+                                        END OF PAGE 1
+                                        ********************************************************************************************************************* */
+/* ********************************************************************************************************************* 
+                                        START OF PAGE 2
+                                        SECOND CONTAINER(About)
+                                        ********************************************************************************************************************* */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.second {
+    background: var(--second);
+    color: white;
+    position: relative;
+    top: 40px;
+}
+span{
+    color: #ff4c29;
+}
+.sec {
+    display: flex;
+}
+
+.second h1 {
+    padding: 32px 93px;
+    font-size: 44px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.sec {
+    padding: 28px;
+}
+
+.second p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    position: relative;
+    color: #fff;
+}
+
+.sec-left {
+    width: 50%;
+}
+
+.sec-right {
+    width: 50%;
+}
+
+.sec-my img {
+    width: 320px;
+    position: relative;
+    right: -200px;
+    background-color: var(--first);
+}
+
+.sec-rest {
+    position: absolute;
+    top: -12px;
+}
+
+.sec-shape {
+    position: absolute;
+    right: 68px;
+    bottom: 192px;
+    overflow: hidden;
+    animation: dot2 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes dot2 {
+    0% {
+        translate: 0 0px;
+    }
+
+    100% {
+        translate: 0 52px;
+    }
+}
+
+/* ********************************************************************************************************************* 
+                                        END OF PAGE 2
+                                        ********************************************************************************************************************* */
+/* ********************************************************************************************************************* 
+                                        START OF PAGE 3
+                                        Third CONTAINER(Qualification)
+                                        ********************************************************************************************************************* */
+
+.third {
+    background: var(--first);
+    color: white;
+    position: relative;
+}
+
+.third h1 {
+    padding: 28px;
+    text-align: center;
+    font-size: 44px;
+    font-family: 'Permanent Marker', cursive;
+    /* border-bottom: 2px solid #ff4c29; */
+}
+
+/* ******************** Education contents ******************************** */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.education {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px 90px;
+}
+
+.education h2 {
+    margin: 3px 32px;
+    font-size: 38px;
+    font-family: 'Lobster', cursive;
+}
+
+.main-edu {
+    margin: 25px;
+    background-color: var(--second);
+    padding: 20px;
+}
+
+.main-edu h3 {
+    margin: 6px 0;
+    font-size: 23px;
+}
+
+.main-edu h5 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #ff4c29;
+}
+
+.main-edu p {
+    margin: 0px 0;
+    font-size: 19px;
+}
+
+/* **************** Skill contents ******************* */
+.skill {
+    position: absolute;
+    margin: 5px 90px;
+    right: 250px;
+    /* bottom: 30px; */
+}
+
+.skill h2 {
+    margin: 3px 32px;
+    font-size: 38px;
+    font-family: 'Lobster', cursive;
+
+}
+
+.inner-skill {
+    background-color: var(--second);
+    padding: 45px;
+    margin: 25px;
+}
+
+.inner-skill ul {
+    list-style: none;
+    font-size: 30px;
+}
+
+.inner-skill ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #ff4c29;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1.2em;
+    /* Also needed for space (tweak if needed) */
+    padding: 8px 0;
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+.skill-shape {
+    position: absolute;
+    right: 8px;
+    bottom: 152px;
+    overflow: hidden;
+    animation: dot1 2.5s ease-in-out infinite alternate;
+}
+
+/* ********************************************************************************************************************* 
+                                        END OF PAGE 3
+                                        ********************************************************************************************************************* */
+/* ********************************************************************************************************************* 
+                                        START OF PAGE 4
+                                        Third CONTAINER(Projects)
+                                        ********************************************************************************************************************* */
+.four {
+    background: var(--second);
+    color: white;
+    position: relative;
+}
+
+.four h1 {
+    text-align: center;
+    font-size: 54px;
+    padding: 28px;
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 22px;
+
+}
+
+.pro-card {
+    height: 300px;
+    margin: 20px;
+    background-color: #f08670;
+}
+.pro-card p{
+    font-size:52px;
+    color: black;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* ********************************************************************************************************************* 
+                                        END OF PAGE 4
+                                        ********************************************************************************************************************* */
+/* ********************************************************************************************************************* 
+                                        START OF PAGE 5
+                                        Third CONTAINER(Contact)
+                                        ********************************************************************************************************************* */
+.five {
+    background: var(--first);
+    color: white;
+    position: relative;
+}
+.left-rev{
+    min-width: 50%;
+}
+.right-rev{
+    min-width: 50%;
+    color: black;
+}
+.five h1 {
+    text-align: center;
+    font-size: 54px;
+    padding: 28px;
+    font-family: 'Permanent Marker', cursive;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+}
